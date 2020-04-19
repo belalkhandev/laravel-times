@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="koira - Factory and Manufacturing Html Template">
     <!-- site title here -->
-    <title>Site title</title>
+    <title>Laravel Times</title>
     <!-- css plugins -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/all.min.css">   
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.min.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|PT+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
     <!-- main stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- custom stylesheet -->
@@ -18,13 +21,142 @@
 <body>
     <!-- header area -->
     <header id="header" class="header-area">
-        
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-item">
+                    <i class="far fa-clock"></i>
+                    <span>Last Updated 1min ago.....</span>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <div class="container">
+                <div class="logo text-center">
+                    <a href=""><img src="assets/img/logo.png" alt=""></a>
+                </div>
+                <div class="header-timebox text-center">
+                    <p>
+                        <span class="timebox-item">Friday</span>
+                        <span class="timebox-item">April 17, 2020</span>
+                        <span class="timebox-item">Shaaban 24, 1441</span>
+                        <span class="timebox-item">Boishakh 4, 1427</span>
+                        <span class="timebox-item">Last Updated 5min ago</span>
+                    </p>
+                </div>
+            </div>
+        </div>
     </header>
 
+    <!-- navigation area -->
+    <nav id="navigation" class="navigation-area">
+        <div class="container">
+            <div class="navigation">
+                <ul class="main-nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">International</a></li>
+                    <li><a href="">Sports</a></li>
+                    <li><a href="">Opinion</a></li>
+                    <li><a href="">Entertainment</a></li>
+                    <li><a href="">Lifestyle</a></li>
+                    <li><a href="">Business</a></li>
+                    <li><a href="">Islam</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+                <div class="navigation-widget">
+                    <span><i class="fas fa-search"></i></span>
+                    <span><i class="fas fa-bars"></i></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <!-- main section area -->
-    <section>
-        
-    </section>
+    <main id="main-content-area">
+        <!-- top news area -->
+        <section class="top-news-area">
+            <div class="container">
+                <div class="top-newses">
+                    <div class="top-news">
+                        <a href="#">
+                            <div class="top-news-img">
+                                <img src="assets/img/post-img.png" alt="">
+                            </div>
+                            <div class="top-news-title">
+                                <h3>Physician served show cause notice for criticising health secretary Physician served show cause notice for criticising.</h3>    
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top-news">
+                        <a href="#">
+                            <div class="top-news-img">
+                                <img src="assets/img/post-img.png" alt="">
+                            </div>
+                            <div class="top-news-title">
+                                <h3>Physician served show cause notice for criticising health secretary</h3>    
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top-news">
+                        <a href="#">
+                            <div class="top-news-img">
+                                <img src="assets/img/post-img.png" alt="">
+                            </div>
+                            <div class="top-news-title">
+                                <h3>Physician served show cause notice for criticising health secretary</h3>    
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top-news">
+                        <a href="#">
+                            <div class="top-news-img">
+                                <img src="assets/img/post-img.png" alt="">
+                            </div>
+                            <div class="top-news-title">
+                                <h3>Physician served show cause notice for criticising health secretary</h3>    
+                            </div>
+                        </a>
+                    </div>
+                    <div class="top-news">
+                        <a href="#">
+                            <div class="top-news-img">
+                                <img src="assets/img/post-img.png" alt="">
+                            </div>
+                            <div class="top-news-title">
+                                <h3>Physician served show cause notice for criticising health secretary</h3>    
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- features news area -->
+        <section class="featured-news-area">
+            <div class="container">
+                <div class="featured-news owl-carousel" id="featureNewsCarousel">
+                    <div class="featured-news-item">
+                        <a href="#">
+                            <div class="feature-new-content">
+                                <div class="featured-news-img">
+                                    <img src="assets/img/post-img.png" alt="">
+                                </div>
+                                <div class="featured-news-title">
+                                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, suscipit!</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, dignissimos.</p>
+                                </div>
+                            </div>
+                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- categories news area -->
+        <section class="categories-news-area">
+
+        </section>
+    </main>
 
     <!-- footer area -->
     <footer id="footer" class="footer-area">
@@ -35,7 +167,7 @@
     <script src="assets/js/jquery.min.js"></script>
     <!-- js plugins -->
     <script src="assets/js/bootstrap.min.js"></script>
-    <!-- ion icon -->
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>
