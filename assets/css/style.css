@@ -34,6 +34,10 @@ ul, ol {
     list-style: none;
 }
 
+.section-padding {
+    padding: 15px 0px;
+}
+
 /* Header style */
 .header-area {
     background-color: #fff;
@@ -76,7 +80,26 @@ ul, ol {
 
 .main-nav li {
     display: inline-block;
-    margin-right: -4px
+    margin-right: -4px;    
+    position: relative;
+    z-index: 1;
+}
+
+.main-nav li::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background: #35495E;
+    content: '';
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.main-nav li:hover::after {
+    width: 100%;
+    transition: 0.25s;
 }
 
 .main-nav li a {
@@ -86,11 +109,10 @@ ul, ol {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
-    transition: 0.25s
+    transition: 0.25s;
 }
 
 .main-nav li:hover a {
-    background-color: #35495E;
     color: #fff
 }
 
@@ -204,7 +226,11 @@ ul, ol {
 
 .featured-news-item {
     background: #fff;
-    padding: 5px;
+    border: 1px solid #f1f1f1;
+}
+
+.featured-news-item a {
+    text-decoration: none;
 }
 
 .featured-news-img {
@@ -216,10 +242,203 @@ ul, ol {
     max-height: 150px;
 }
 
+.featured-news-title {
+    padding: 5px;
+}
+
 .featured-news-title h3 {
     font-size: 1rem;
     color: #2b2d38;
     font-weight: 600
 }
 
+.featured-news-title p {
+    color: #383838
+}
+
 /* end feature section style */
+
+/* start  section title style */
+.section-title-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #3F51B5;
+    margin-bottom: 20px;
+}
+
+.section-title h3 {
+    font-size: 24px;
+    color: #101010;
+    font-weight: 600
+}
+
+.section-action-nav ul {
+    list-style: none;
+}
+
+.section-action-nav ul li {
+    display: inline-block;
+    margin-left: -4px
+}
+
+.section-action-nav ul li a {
+    color: #ffffff;
+    padding: 5px 15px;
+    background: #3f51b5;
+    display: block;
+    font-size: .82rem;
+}
+
+/* end section title style */
+
+/* start category news style */
+.category-top-news {
+    background: #fff;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+}
+
+.category-top-news-img {
+    margin-bottom: 10px;
+}
+
+.category-top-news-title h3 {
+    color: #1e2025;
+    font-size: 20px;
+}
+
+.category-top-news-description p {
+    color: #616161
+}
+
+.category-newses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 5px), 1fr));
+    grid-gap: 10px;
+}
+
+.category-news {
+    background: #fff;
+    padding: 5px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.category-news-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.category-news-img {
+    width: 100px;
+    margin-right: 5px;
+}
+
+.category-news-img img {
+    width: 100%;
+    min-height: auto;
+    max-height: 100px;
+}
+
+.category-news-text {
+    width: calc(100% - 105px);
+}
+
+.category-news-title {
+    padding-bottom: 5px;
+}
+
+.category-news-title h3 {
+    font-size: 15px;
+}
+
+.category-news-description p {
+    color: #7b7b7b;
+    font-size: 14px;
+}
+
+/* tab news style */
+.tab-newses {
+    background-color: #fff;
+}
+
+.tab-news-header {
+    background: #647f9c;
+}
+
+.tab-news-nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: wrap;
+}
+
+.tab-news-nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.tab-news-nav ul li a {
+    color: #fff;
+    padding: 8px 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.tab-news-nav ul li:hover a {
+    background: #35495E;
+    transition: 0.25s;
+}
+
+.tab-news-body {
+    padding: 10px;
+}
+
+.tab-news-item {
+    margin-bottom: 5px;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.tab-news-item a {
+    color: #101010;
+}
+
+.tab-news-item a h4{
+    font-size: 16px;
+}
+
+.tab-news-item:hover {
+    background: #35495E;
+}
+
+.tab-news-item:hover a{
+    color: #fff;
+}
+
+.opinion-newses {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(50% - 5px), 1fr));
+    grid-gap: 10px;
+}
+
+.opinion-news-item {
+    background: #fff;
+    padding: 10px;
+}
+
+.opnion-news-title h4 {
+    color: #000;
+    font-size: 18px;
+}
+
+.opnion-news-content p {
+    font-size: 14px;
+    color: #6b6b6b;
+}
